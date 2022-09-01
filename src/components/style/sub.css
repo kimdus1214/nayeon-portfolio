@@ -1,2 +1,16 @@
-.sub-block{width: 100%; height: 100%; position: relative;}
-.sub-wrap{display: flex; align-items: center; justify-content: center;}
+.sub-block{width: 100%; height: auto; position: relative; display: flex; justify-content: flex-end;overflow-y: auto; scrollbar-width: none; /* Firefox */}
+.sub-block::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
+.sub-wrap{max-width: 1200px; width: 100%; padding: 100px 0;}
+.sub-tit{display: flex; align-items: center;}
+.sub-tit svg{margin-top: 5px; color: #fff;}
+.sub-tit b{margin-left: 5px; font-size: 24px; font-weight: 700; color: #fff;}
+
+/* 소개 페이지 */
+.intro-block .sub-wrap{}
+.intro-block .title{display: flex;}
+.intro-block .title h1{font-size: 100px; font-weight: 900; color: #fff; position: relative;}
+.intro-block .title h1 span{display: inline-block; transform: translateY(-50%); opacity: 0;}
+.intro-block .title .smile{margin-left: 15px; transform: translateY(-50px);}
+#afterSmile{visibility:hidden;}
+
+
