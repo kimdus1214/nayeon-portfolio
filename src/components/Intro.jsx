@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
+// import './style/common.css';
 import './style/sub.css';
+import './style/progress.scss';
 import { AiTwotoneHeart } from "react-icons/ai";
 import {gsap, Elastic } from 'gsap';
 import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
@@ -23,14 +25,13 @@ function Intro(){
             opacity: 1,
             ease: Elastic.easeOut.config(1, 0.3),
             stagger: {
-            each: 0.7,
-            amount: 0.5
+                each: 0.7,
+                amount: 0.5
             }
         },1)
         .fromTo(".smile",{opacity: 0},{opacity: 1, duration: 0.5,  y: 0, ease: Elastic.easeOut.config(1, 0.5)})
         .to(q("#preSmile"), {
             morphSVG: q("#afterSmile"),
-            // delay: 0.5,
             duration: 0.5,
             ease: "none"
         })
@@ -51,66 +52,124 @@ function Intro(){
                     </svg>
                 </div>
                 <div className="contents mt-100">
-                    <div className="aboutMe">
-                        <h2 className="sub-tit"><AiTwotoneHeart /><b>About me</b></h2>
-                        <ul className="mt-20">
-                            <li>name. 김나연</li>
-                            <li>birth. 1992.12.14</li>
-                            <li>region. busan</li>
-                            <li>
-                                <div>
-                                    <b>career. </b>                
+                    <div className="aboutMe border-top-point">
+                        <div className="aboutMe__tit tit">
+                            <h1>about me</h1>
+                        </div>
+                        <div className="contents__right">
+                            <div className="profile pb-35 border-bottom-white">
+                                <h2 className="sub-tit"><AiTwotoneHeart /><b>profile</b></h2>
+                                <div className="profile__imgTxt mt-20">
+                                    <div className="profile-img">
+                                        <img src={process.env.PUBLIC_URL + './assets/sub/profile.png'} alt="profile" />
+                                    </div>
                                     <ul>
-                                        <li><b>2021.11~</b> </li>
-                                        <li><b>2021.11~</b> </li>
-                                        <li><b>2021.11~</b> 시아 재직중</li>
+                                        <li>
+                                            <b>Name.</b>
+                                            <p>김나연</p>
+                                        </li>
+                                        <li>
+                                            <b>Birth.</b>
+                                            <p>1992.12.14</p>
+                                        </li>
+                                        <li>
+                                            <b>Education.</b>
+                                            <p>
+                                                학산여자고등학교 졸업 <br/>
+                                                코리아IT아카데미 프론트엔드 개발자 과정 이수
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <b>Certification.</b>
+                                            <p>
+                                                컴퓨터그래픽스운용기능사 <br/>
+                                                웹디자인기능사
+                                            </p>
+                                        </li>
                                     </ul>
                                 </div>
-                            </li>                            
-                        </ul>
+                            </div>
+                            <div className="keyword mt-35 pb-35 border-bottom-white">
+                                <h2 className="sub-tit"><AiTwotoneHeart /><b>keyword</b></h2>
+                                <p>#끈기있는 #책임감이 강한 #약속을 잘 지키는 #탐구하는 #차분한</p>
+                            </div>
+                            <div className="techStack mt-35 pb-35">
+                                <h2 className="sub-tit"><AiTwotoneHeart /><b>Tech Stack</b></h2>
+                                <ul className="mt-50">
+                                    <li>
+                                        <strong>html/css</strong>
+                                        <div className="progressbar">
+                                            <svg className="progressbar__svg">
+                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-html stroke-html"> </circle>
+                                            </svg>
+                                            <span className="progressbar__text">95</span>
+                                        </div>
+                                        <p>반응형으로 원하는 레이아웃과 <br/>스타일 및 효과 구현이 가능합니다.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Javascript</strong>
+                                        <div className="progressbar">
+                                            <svg className="progressbar__svg">
+                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-js stroke-js"> </circle>
+                                            </svg>
+                                            <span className="progressbar__text shadow-js">85</span>
+                                        </div>
+                                        <p>순수 자바스크립트의 활용과 <br/>es6 문법의 코드분석이 가능합니다.</p>
+                                    </li>
+                                    <li>
+                                        <strong>jquery</strong>
+                                        <div className="progressbar">
+                                            <svg className="progressbar__svg">
+                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-jq stroke-jq"> </circle>
+                                            </svg>
+                                            <span className="progressbar__text shadow-jq">85</span>
+                                        </div>
+                                        <p>제이쿼리를 활용한 <br/>코드 분석 및 구현이 가능합니다.</p>
+                                    </li>
+                                    <li>
+                                        <strong>React.js</strong>
+                                        <div className="progressbar">
+                                            <svg className="progressbar__svg">
+                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-react stroke-react"> </circle>
+                                            </svg>
+                                            <span className="progressbar__text shadow-react">80</span>
+                                        </div>
+                                        <p>리액트를 활용한 <br/>UI 구축이 가능합니다.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Design Tool</strong>
+                                        <div className="progressbar">
+                                            <svg className="progressbar__svg">
+                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-design stroke-design"> </circle>
+                                            </svg>
+                                            <span className="progressbar__text shadow-design">95</span>
+                                        </div>
+                                        <p>어도비 포토샵, 일러스트 툴을 사용하여 <br/>디자인 및 편집이 가능합니다.</p>                                
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="keyword mt-50">
-                        <h2 className="sub-tit"><AiTwotoneHeart /><b>keyword</b></h2>
-                        <p className="mt-20">#끈기있는 #책임감이 강한 #약속을 잘 지키는 #탐구하는 #차분한</p>
-                    </div>
-                    <div className="introduce mt-35">                        
-                        <p>
-                            안녕하세요. <br/>
-                            어린 시절에는 막연히 디자인에 대한 호기심이 많았지만, 다양한 디자인 직무 경험들을 통해 <br/>
-                            디자인보다는 어떤 문제에 대한 고민과 해결에 대한 흥미와 능력이 더 좋음을 알게되었습니다. <br/>
-                            이 계기를 통해 프론트엔드 파트에 대한 심화 공부를 하게 되었습니다. <br/>
-                            학원 수업을 통해 기본적인 코딩 역량을 성장 시킴과 동시에 다양한 라이브러리와 프레임워크를 경험하였습니다. <br/>
-                            이 후 퍼블리셔로 활동을 하면서 나날이 더 성장하기위해 꾸준히 노력하고 있습니다. <br/>
-                            새로운 기술을 겁내하지 않고 항상 발전하는 퍼블리셔가 되겠습니다.
-                        </p>
-                    </div>
-                    <div className="skill mt-50">
-                        <h2 className="sub-tit"><AiTwotoneHeart /><b>skills</b></h2>
-                        <ul className="mt-20">
-                            <li>
-                                <strong>HTML/CSS</strong>
-                                <p>반응형으로 원하는 레이아웃과 스타일 및 효과 구현이 가능합니다.</p>
-                            </li>
-                            <li>
-                                <strong>Javascript</strong>
-                                <p>순수 자바스크립트의 활용과 es6 문법의 코드분석이 가능합니다.</p>
-                            </li>
-                            <li>
-                                <strong>jquery</strong>
-                                <p>제이쿼리를 활용한 코드 분석 및 구현이 가능합니다.</p>
-                            </li>
-                            <li>
-                                <strong>React.js</strong>
-                                <p>리액트를 활용한 UI 구축이 가능합니다.</p>
-                            </li>
-                            <li>
-                                <strong>Design Tool</strong>
-                                <p>어도비 포토샵, 일러스트 툴을 사용하여 디자인 및 편집이 가능합니다.</p>                                
-                            </li>
-                        </ul>
+                    <div className="skills border-top-point">                        
+                        <div className="skills__tit tit">
+                            <h1>Skills</h1>
+                            <span>used in portfolio</span>
+                        </div>
+                        <div className="contents__right">
+                            <ul>
+                                <li>
+                                    <img src={process.env.PUBLIC_URL + './assets/sub/jsIcon.png'} alt="javascript icon" />
+                                    <p>JavaScript</p>
+                                </li>
+                                <li>
+                                    <img src={process.env.PUBLIC_URL + './assets/sub/reactIcon.png'} alt="react icon" />
+                                    <p>React.js</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>           
+            </div>
         </section>
     );
 }

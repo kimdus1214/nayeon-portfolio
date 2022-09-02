@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.border-top-point{border-top: 1px solid #efd97f;}
+.border-bottom-white{border-bottom: 1px solid #fff;}
+
 .sub-block{width: 100%; height: auto; position: relative; display: flex; justify-content: flex-end;overflow-y: auto; scrollbar-width: none; /* Firefox */}
 .sub-block::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
 .sub-wrap{max-width: 1200px; width: 100%; padding: 100px 0;}
 .sub-tit{display: flex; align-items: center;}
-.sub-tit svg{margin-top: 5px; color: #fff;}
-.sub-tit b{margin-left: 5px; font-size: 24px; font-weight: 700; color: #fff;}
+.sub-tit svg{margin-top: 5px; color: #efd97f;}
+.sub-tit b{margin-left: 5px; font-size: 24px; font-weight: 700; color: #efd97f;}
 
 /* 소개 페이지 */
 .intro-block .sub-wrap{}
@@ -12,5 +22,37 @@
 .intro-block .title h1 span{display: inline-block; transform: translateY(-50%); opacity: 0;}
 .intro-block .title .smile{margin-left: 15px; transform: translateY(-50px);}
 #afterSmile{visibility:hidden;}
+.intro-block .contents>div{display: flex; justify-content: space-between; padding: 38px 0 150px;}
+.intro-block .contents .tit h1{font-size: 36px; color: #efd97f; text-transform: uppercase;}
+.intro-block .contents .contents__right{margin-left: 9.66%; margin-top: 5px; width: 71%;}
+.intro-block .contents .contents__right .profile__imgTxt{display: flex;}
+.intro-block .contents .contents__right .profile__imgTxt ul{margin-left: 7.27%;}
+.intro-block .contents .contents__right .profile__imgTxt ul li{display: flex;}
+.intro-block .contents .contents__right .profile__imgTxt ul li+li{margin-top: 20px;}
+.intro-block .contents .contents__right .profile__imgTxt ul li b{font-size: 20px; color: #fff;}
+.intro-block .contents .contents__right .profile__imgTxt ul li p{margin-left: 20px; font-size: 16px; color: #fff; font-family: 'GmarketSansMedium'; font-weight: 300; line-height: 1.4;}
+.intro-block .contents .contents__right .keyword{display: flex; align-items: center;}
+.intro-block .contents .contents__right .keyword p{margin-left: 11.66%; font-size: 18px; font-family: 'GmarketSansMedium'; font-weight: 300; line-height: 1.4; color: #fff;}
+.intro-block .contents .contents__right .techStack ul{display: flex; flex-wrap: wrap;}
+.intro-block .contents .contents__right .techStack ul li{width:37.57%; margin-right:4.43%; margin-top: 35px; padding: 30px; display: flex; flex-direction: column; align-items: center; border: 1px solid #fff;}
+.intro-block .contents .contents__right .techStack ul li strong{display: block; width: 100%; padding-bottom: 15px; border-bottom: 1px solid #fff; color: #fff; font-size: 24px; text-align: center;}
+.intro-block .contents .contents__right .techStack ul li p{width: 100%; margin-top: 35px; font-family: 'GmarketSansMedium'; font-size: 16px; text-align: center; color: #fff; line-height: 1.6;}
+.intro-block .contents .skills .tit span{font-weight: 700; color: #efd97f; font-size: 20px; line-height: 1.8; text-transform: uppercase;}
+.intro-block .contents .skills .contents__right ul{display: flex; margin-top: 10px;}
+.intro-block .contents .skills .contents__right ul li{display: flex; align-items: center;}
+.intro-block .contents .skills .contents__right ul li+li{margin-left: 60px;}
+.intro-block .contents .skills .contents__right ul li p{margin-left: 20px; font-size: 20px; color: #fff;}
+
+
+@media (max-width:1600px){
+    .sub-wrap{max-width: 1000px;}
+    .intro-block .contents .contents__right{margin-left: 4%;}
+    .intro-block .contents .contents__right .keyword .profile{padding-right: 4%;}
+    .intro-block .contents .contents__right .keyword{padding-right: 4%;}
+    .intro-block .contents .contents__right .keyword p{margin-left: 8.66%; word-break: keep-all;}
+    .intro-block .contents .contents__right .techStack{padding-right: 4%;}
+    .intro-block .contents .contents__right .techStack ul li{width: 32.57%; padding: 20px;}
+}
+
 
 

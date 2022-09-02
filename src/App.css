@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video { margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+time, mark, audio, video { margin: 0;padding: 0;border: 0;vertical-align: baseline;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {display: block;}
@@ -21,8 +21,8 @@ a{text-decoration: none}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body{font-size: 16px; background-color: #1a1a1a;}
-.wrap{width: 100%; margin: auto; position: relative; box-sizing: border-box; background-color: #1a1a1a; overflow: hidden;}
-
+.wrap{width: 100%; max-width: 1920px; margin: auto; position: relative; box-sizing: border-box; background-color: #1a1a1a; overflow: hidden;}
+.home{width: 100%; height: 100vh; overflow: hidden; position: relative;}
 /* 노이즈 효과*/
 .noise-wrap{position: absolute; width: 100%; height: 100%;}
 .noise-wrap::after {content:'';position:absolute;z-index:800;height:180%;left:-40%;top:-40%;width:180%;

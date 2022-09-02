@@ -6,8 +6,9 @@ import Job from "../components/Job";
 import Paging from "../components/Paging";
 
 function Home() {
-    return (
-        <div className="wrap">
+    return (            
+        <div className="home">
+            <div className='noise-wrap'></div>
             <Header />
             <Main />
             <Aside />

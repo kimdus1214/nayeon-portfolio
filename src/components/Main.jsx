@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import './style/main.css';
-import './style/common.css';
+// import './style/common.css';
 import {gsap, Elastic } from 'gsap';
 import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
 gsap.registerPlugin(MorphSVGPlugin);
@@ -59,7 +59,6 @@ function Main(){
     
     return(
         <>
-            <div className='noise-wrap'></div>
             <div className="main__block">
                 <div className="main__wrap">
                     <div className="main__text">
