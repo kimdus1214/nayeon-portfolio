@@ -17,15 +17,18 @@
 
 /* 소개 페이지 */
 .intro-block .sub-wrap{}
-.intro-block .title{display: flex;}
-.intro-block .title h1{font-size: 100px; font-weight: 900; color: #fff; position: relative;}
-.intro-block .title h1 span{display: inline-block; transform: translateY(-50%); opacity: 0;}
-.intro-block .title .smile{margin-left: 15px; transform: translateY(-50px);}
+.sub-block .title{display: flex;}
+.sub-block .title h1{font-size: 100px; font-weight: 900; color: #fff; position: relative;}
+.sub-block .title h1 span{display: inline-block; transform: translateY(-50%); opacity: 0;}
+.sub-block .title .smile{margin-left: 15px; transform: translateY(-50px);}
 #afterSmile{visibility:hidden;}
+
 .intro-block .contents>div{display: flex; justify-content: space-between; padding: 38px 0 150px;}
 .intro-block .contents .tit h1{font-size: 36px; color: #efd97f; text-transform: uppercase;}
 .intro-block .contents .contents__right{margin-left: 9.66%; margin-top: 5px; width: 71%;}
 .intro-block .contents .contents__right .profile__imgTxt{display: flex;}
+.intro-block .contents .contents__right .profile__imgTxt .profile-img{width: 168px; height: 168px; overflow: hidden;}
+.intro-block .contents .contents__right .profile__imgTxt .profile-img img{width: 100%;}
 .intro-block .contents .contents__right .profile__imgTxt ul{margin-left: 7.27%;}
 .intro-block .contents .contents__right .profile__imgTxt ul li{display: flex;}
 .intro-block .contents .contents__right .profile__imgTxt ul li+li{margin-top: 20px;}
@@ -37,6 +40,17 @@
 .intro-block .contents .contents__right .techStack ul li{width:37.57%; margin-right:4.43%; margin-top: 35px; padding: 30px; display: flex; flex-direction: column; align-items: center; border: 1px solid #fff;}
 .intro-block .contents .contents__right .techStack ul li strong{display: block; width: 100%; padding-bottom: 15px; border-bottom: 1px solid #fff; color: #fff; font-size: 24px; text-align: center;}
 .intro-block .contents .contents__right .techStack ul li p{width: 100%; margin-top: 35px; font-family: 'GmarketSansMedium'; font-size: 16px; text-align: center; color: #fff; line-height: 1.6;}
+.intro-block .contents .contents__right .techStack ul li .progressbar{position: relative; margin-top: 35px; width: 100px; height: 100px;}
+.intro-block .contents .contents__right .techStack ul li .progressbar svg{width: 100%; height: 100%; transform: rotate(-90deg);}
+.intro-block .contents .contents__right .techStack ul li .progressbar svg .progressbar__svg-circle{fill: none; stroke-width: 5; stroke-dasharray: 251; stroke-dashoffset: 251;}
+.intro-block .contents .contents__right .techStack ul li .progressbar .progressbar__text{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 0.25em;}
+
+.text-html { color: hsl(15, 100%, 60%);}
+.text-js { color: #60a313;}
+.text-jq { color: #0767a8;}
+.text-react { color: #5ed3f3;}
+.text-design { color: #e83543;}
+
 .intro-block .contents .skills .tit span{font-weight: 700; color: #efd97f; font-size: 20px; line-height: 1.8; text-transform: uppercase;}
 .intro-block .contents .skills .contents__right ul{display: flex; margin-top: 10px;}
 .intro-block .contents .skills .contents__right ul li{display: flex; align-items: center;}

@@ -1,11 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 // import './style/common.css';
 import './style/sub.css';
 import './style/progress.scss';
 import { AiTwotoneHeart } from "react-icons/ai";
 import {gsap, Elastic } from 'gsap';
 import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
+import ScrollTrigger from "gsap-trial/ScrollTrigger";
+import CountUp from 'react-countup';
 gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 function Intro(){
     const hello = useRef(null);
@@ -37,6 +40,22 @@ function Intro(){
         })
     })
 
+    const stack = useRef(null);
+    const [action, setAction] = useState(false);
+    useEffect(()=>{        
+        window.addEventListener('scroll',stackAnimation)
+    })
+
+    const stackAnimation = ()=>{
+        let currentSCT = window.scrollY;
+        let stackOST = stack.current.offsetTop - 300;
+        // console.log(currentSCT);
+        // console.log(stackOST);
+        if(currentSCT >= stackOST) {
+            setAction(true);
+        }
+    }
+    
     return(
         <section className="intro-block sub-block">
             <div className="sub-wrap">
@@ -61,7 +80,7 @@ function Intro(){
                                 <h2 className="sub-tit"><AiTwotoneHeart /><b>profile</b></h2>
                                 <div className="profile__imgTxt mt-20">
                                     <div className="profile-img">
-                                        <img src={process.env.PUBLIC_URL + './assets/sub/profile.png'} alt="profile" />
+                                        <img src={process.env.PUBLIC_URL + './assets/sub/profile.jpg'} alt="profile" />
                                     </div>
                                     <ul>
                                         <li>
@@ -93,16 +112,18 @@ function Intro(){
                                 <h2 className="sub-tit"><AiTwotoneHeart /><b>keyword</b></h2>
                                 <p>#끈기있는 #책임감이 강한 #약속을 잘 지키는 #탐구하는 #차분한</p>
                             </div>
-                            <div className="techStack mt-35 pb-35">
+                            <div className="techStack mt-35 pb-35" ref={stack}>
                                 <h2 className="sub-tit"><AiTwotoneHeart /><b>Tech Stack</b></h2>
                                 <ul className="mt-50">
                                     <li>
                                         <strong>html/css</strong>
                                         <div className="progressbar">
                                             <svg className="progressbar__svg">
-                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-html stroke-html"> </circle>
+                                                <circle cx="50" cy="50" r="40" className={`progressbar__svg-circle stroke-html ${action ? 'circle-html': ''}`}></circle>
                                             </svg>
-                                            <span className="progressbar__text">95</span>
+                                            {action&&
+                                                <CountUp start={0} end={95} duration={1} className="progressbar__text text-html"></CountUp>
+                                            }
                                         </div>
                                         <p>반응형으로 원하는 레이아웃과 <br/>스타일 및 효과 구현이 가능합니다.</p>
                                     </li>
@@ -110,9 +131,11 @@ function Intro(){
                                         <strong>Javascript</strong>
                                         <div className="progressbar">
                                             <svg className="progressbar__svg">
-                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-js stroke-js"> </circle>
+                                                <circle cx="50" cy="50" r="40" className={`progressbar__svg-circle stroke-js ${action ? 'circle-js': ''}`}> </circle>
                                             </svg>
-                                            <span className="progressbar__text shadow-js">85</span>
+                                            {action&&
+                                                <CountUp start={0} end={85} duration={1} className="progressbar__text text-js"></CountUp>
+                                            }
                                         </div>
                                         <p>순수 자바스크립트의 활용과 <br/>es6 문법의 코드분석이 가능합니다.</p>
                                     </li>
@@ -120,9 +143,11 @@ function Intro(){
                                         <strong>jquery</strong>
                                         <div className="progressbar">
                                             <svg className="progressbar__svg">
-                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-jq stroke-jq"> </circle>
+                                                <circle cx="50" cy="50" r="40" className={`progressbar__svg-circle stroke-jq ${action ? 'circle-jq': ''}`}> </circle>
                                             </svg>
-                                            <span className="progressbar__text shadow-jq">85</span>
+                                            {action&&
+                                                <CountUp start={0} end={85} duration={1} className="progressbar__text text-jq"></CountUp>
+                                            }
                                         </div>
                                         <p>제이쿼리를 활용한 <br/>코드 분석 및 구현이 가능합니다.</p>
                                     </li>
@@ -130,9 +155,11 @@ function Intro(){
                                         <strong>React.js</strong>
                                         <div className="progressbar">
                                             <svg className="progressbar__svg">
-                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-react stroke-react"> </circle>
+                                                <circle cx="50" cy="50" r="40" className={`progressbar__svg-circle stroke-react ${action ? 'circle-react': ''}`}> </circle>
                                             </svg>
-                                            <span className="progressbar__text shadow-react">80</span>
+                                            {action&&
+                                                <CountUp start={0} end={80} duration={1} className="progressbar__text text-react"></CountUp>
+                                            }
                                         </div>
                                         <p>리액트를 활용한 <br/>UI 구축이 가능합니다.</p>
                                     </li>
@@ -140,9 +167,11 @@ function Intro(){
                                         <strong>Design Tool</strong>
                                         <div className="progressbar">
                                             <svg className="progressbar__svg">
-                                                <circle cx="45" cy="45" r="40" className="progressbar__svg-circle circle-design stroke-design"> </circle>
+                                                <circle cx="50" cy="50" r="40" className={`progressbar__svg-circle stroke-design ${action ? 'circle-design': ''}`}> </circle>
                                             </svg>
-                                            <span className="progressbar__text shadow-design">95</span>
+                                            {action&&
+                                                <CountUp start={0} end={95} duration={1} className="progressbar__text text-design"></CountUp>
+                                            }
                                         </div>
                                         <p>어도비 포토샵, 일러스트 툴을 사용하여 <br/>디자인 및 편집이 가능합니다.</p>                                
                                     </li>
