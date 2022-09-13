@@ -8,7 +8,7 @@ import Paging from "../components/Paging";
 function ProjectPage() {
     return (
         <div className="wrap">
-            <Header />
+            <Header project={true} />
             <Project />        
             <Aside />
             <Job />

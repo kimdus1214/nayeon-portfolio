@@ -8,7 +8,7 @@ import Paging from "../components/Paging";
 function ContactPage() {
     return (
         <div className="wrap">
-            <Header />
+            <Header contact={true}/>
             <Contact />
             <Aside />
             <Job />

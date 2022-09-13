@@ -15,46 +15,91 @@ function Main(){
         let mainTxt = gsap.timeline({repeat:-1, repeatDelay: 1});
         let bigtext = welcome.current.innerText.split('').map(item=> `<span>${item}</span>`);
         // console.log(bigtext.join(''));
-        welcome.current.innerHTML=bigtext.join('');        
+        welcome.current.innerHTML=bigtext.join('');
         
-        mainTxt
-        .to(".big-text h1 span", {
-            duration: 0.7,
-            yPercent: 0,
-            opacity: 1,
-            ease: Elastic.easeOut.config(1, 0.3),
-            stagger: {
-            each: 0.7,
-            amount: 0.5
-            }
-        },1)
-        .fromTo(".smile",{opacity: 0},{opacity: 1, duration: 0.5,  y: 0, ease: Elastic.easeOut.config(1, 0.5)})
-        .to(q("#preSmile"), {
-            morphSVG: q("#afterSmile"),
-            // delay: 0.5,
-            duration: 0.5,
-            ease: "none"
-        })
-        .to(".small-text-wrap", {
-            duration: 0.8,
-            delay: 1,
-            top: 0,
-            opacity: 1,
-            ease: Elastic.easeOut.config(0.5, 0.45),
-        })
-        .to(".small-text-wrap", {
-            duration: 0.8,
-            delay: 3,
-            top: -100, 
-            ease: Elastic.easeOut.config(0.5, 0.45),
-        })
-        .to(".main__text",{
-            opacity: 0,
-            delay: 1.5,
-            duration: 2,
-        })
-        .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
-        .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
+        let winWidth = window.innerWidth;
+        console.log(winWidth)
+        
+        if(winWidth>1280){
+            mainTxt
+            .to(".big-text h1 span", {
+                duration: 0.7,
+                yPercent: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+                stagger: {
+                each: 0.7,
+                amount: 0.5
+                }
+            },1)
+            .fromTo(".smile",{opacity: 0},{opacity: 1, duration: 0.5,  y: 0, ease: Elastic.easeOut.config(1, 0.5)})
+            .to(q("#preSmile"), {
+                morphSVG: q("#afterSmile"),
+                // delay: 0.5,
+                duration: 0.5,
+                ease: "none"
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 1,
+                top: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 3,
+                top: -100,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".main__text",{
+                opacity: 0,
+                delay: 1.5,
+                duration: 2,
+            })
+            .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
+            .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
+        }else{
+            mainTxt
+            .to(".big-text h1 span", {
+                duration: 0.7,
+                yPercent: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+                stagger: {
+                each: 0.7,
+                amount: 0.5
+                }
+            },1)
+            .fromTo(".smile",{opacity: 0},{opacity: 1, duration: 0.5,  y: 0, ease: Elastic.easeOut.config(1, 0.5)})
+            .to(q("#preSmile"), {
+                morphSVG: q("#afterSmile"),
+                // delay: 0.5,
+                duration: 0.5,
+                ease: "none"
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 1,
+                top: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 3,
+                top: -65,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".main__text",{
+                opacity: 0,
+                delay: 1.5,
+                duration: 2,
+            })
+            .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
+            .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
+        }
+
     })
     
     return(

@@ -11,3 +11,14 @@
 .main__text .small-text-wrap p{font-size: 60px; line-height: 1.4; font-weight: 700; color: #fff; text-align: center;}
 .main__text-last{position: absolute; left: 50%; transform: translateX(-50%);}
 .main__text-last h1{font-size: 100px; font-weight: 900; color: #fff;}
+
+
+@media (max-width:1280px){
+    .main__text .big-text h1{font-size: 3rem;}
+    .main__text .big-text .smile{width: 95px; height: 80px;}
+    .main__text .small-text-block{height: 56px; margin-top: 20px;}
+    .main__text .small-text-wrap p{font-size: 2rem;}
+
+    .main__text-last h1{font-size: 2.5rem;}
+
+}

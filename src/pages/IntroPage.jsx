@@ -6,9 +6,10 @@ import Job from "../components/Job";
 import Paging from "../components/Paging";
 
 function IntroPage() {
+
     return (
         <div className="wrap">
-            <Header />
+            <Header intro={true} />
             <Intro />
             <Aside />
             <Job />

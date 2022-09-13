@@ -18,7 +18,7 @@
 /* 소개 페이지 */
 .intro-block .sub-wrap{}
 .sub-block .title{display: flex;}
-.sub-block .title h1{font-size: 100px; font-weight: 900; color: #fff; position: relative;}
+.sub-block .title h1{font-size: 80px; font-weight: 900; color: #fff; position: relative;}
 .sub-block .title h1 span{display: inline-block; transform: translateY(-50%); opacity: 0;}
 .sub-block .title .smile{margin-left: 15px; transform: translateY(-50px);}
 #afterSmile{visibility:hidden;}
@@ -44,6 +44,7 @@
 .intro-block .contents .contents__right .techStack ul li .progressbar svg{width: 100%; height: 100%; transform: rotate(-90deg);}
 .intro-block .contents .contents__right .techStack ul li .progressbar svg .progressbar__svg-circle{fill: none; stroke-width: 5; stroke-dasharray: 251; stroke-dashoffset: 251;}
 .intro-block .contents .contents__right .techStack ul li .progressbar .progressbar__text{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 0.25em;}
+.intro-block .contents .contents__right .techStack ul li:nth-child(2n){margin-right: 0;}
 
 .text-html { color: hsl(15, 100%, 60%);}
 .text-js { color: #60a313;}
@@ -57,6 +58,17 @@
 .intro-block .contents .skills .contents__right ul li+li{margin-left: 60px;}
 .intro-block .contents .skills .contents__right ul li p{margin-left: 20px; font-size: 20px; color: #fff;}
 
+.contact h5{font-size: 24px; line-height: 1.6; font-family: 'GmarketSansMedium'; color: #fff;}
+.contact .contact-con p{font-size: 18px; font-weight: 300; line-height: 1.4; font-family: 'GmarketSansMedium'; color: #fff;}
+.contact .contact-con p+p{margin-top: 20px;}
+.contact ul li{display: flex;}
+.contact ul li+li{margin-top: 12px;}
+.contact ul li b{width: 12%; font-size: 20px; font-weight: 900; color: #c3b98f; text-transform: uppercase;}
+.contact ul li p{margin-left: 3%; font-size: 20px; font-weight: 700; color: #fff;}
+
+
+
+
 
 @media (max-width:1600px){
     .sub-wrap{max-width: 1000px;}
@@ -65,8 +77,31 @@
     .intro-block .contents .contents__right .keyword{padding-right: 4%;}
     .intro-block .contents .contents__right .keyword p{margin-left: 8.66%; word-break: keep-all;}
     .intro-block .contents .contents__right .techStack{padding-right: 4%;}
-    .intro-block .contents .contents__right .techStack ul li{width: 32.57%; padding: 20px;}
+    .intro-block .contents .contents__right .techStack ul li{width: 38.57%; padding: 20px;}
 }
 
+@media (max-width:1440px){
+    .sub-wrap {max-width: 860px;}
+    .intro-block .contents .contents__right .profile__imgTxt{flex-direction: column;}
+    .intro-block .contents .contents__right .profile__imgTxt ul{margin-left: 0; margin-top: 35px;}
+    .intro-block .contents .contents__right .techStack ul{margin-top: 0;}
+    .intro-block .contents .contents__right .techStack ul li{width: 40.57%;}
+    .contact ul li b{width: 15%;}
+}
+@media (max-width:1280px){
+    .sub-block{position: static; padding: 150px 0;}
+    .sub-wrap{max-width: initial; padding: 0 40px;}
 
+    .sub-block .title h1{font-size: 3rem;}
+    .sub-block .title .smile{width: 95px; height: 80px;}
+    .contents{margin-top: 60px;}
+
+    .intro-block .contents .contents__right .techStack{padding-right: 0;}
+}
+
+@media (max-width:1024px){
+    .intro-block .contents>div{flex-direction: column;}
+    .intro-block .contents .contents__right{margin-left: 0; margin-top: 60px; width: 100%;}
+    .intro-block .contents .contents__right .techStack ul li{width: 43.2%;}
+}
 
