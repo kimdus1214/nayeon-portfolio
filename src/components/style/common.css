@@ -80,7 +80,9 @@ header{position: fixed; z-index: 9; left: 60px; top: 60px; transition: all .5s;}
     .main-header ul{display: none;}
     .main-header button{display: block; display: block; border: 0; padding: 0; background: transparent; color: #fff; font-size: 2rem;}
 
-    .mobile-header{width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 9;}
-    .mobile-header .main-header{width: 100%; height: 100%;}
+    .mobile-header{width: 100%; height: 100%; position: fixed; right: 0; top: 0; z-index: 9; background: black; display: block;}
+    .mobile-header .main-header{width: 100%; height: 100%; justify-content: center; padding: 20px; box-sizing: border-box;}
     .mobile-header .main-header ul{display: block;}
+    .mobile-header .main-header ul li{opacity: 1; margin-right: 0; height: 50px; display: flex; align-items: center; justify-content: center; transform: initial;}
+    .mobile-header .main-header button{position: absolute; top: 20px; right: 20px;}
 }

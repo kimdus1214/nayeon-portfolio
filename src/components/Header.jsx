@@ -1,16 +1,16 @@
-import React, { useEffect,useRef } from "react";
+import React, { useEffect,useRef,useState } from "react";
 import {Link, useNavigate} from "react-router-dom";
 import './style/common.css';
 import { gsap,Power1 } from "gsap";
-import { IoMenuSharp } from "react-icons/io5";
+import { IoMenuSharp, IoCloseSharp } from "react-icons/io5";
 import { BiHomeHeart } from "react-icons/bi";
-import { useState } from "react";
 
 function Header({intro, project, contact}){
     let tl = gsap.timeline();
     let menuTl = gsap.timeline();
     let navigate = useNavigate();
     const mainHeader = useRef(null);
+    const [MobileMenu, setMobileMenu] = useState(false);
 
     useEffect(()=>{
         tl
@@ -36,7 +36,6 @@ function Header({intro, project, contact}){
     const [HeaderOn, setHeaderOn] = useState(false);
     useEffect(()=>{
         window.addEventListener('scroll',headerScroll);
-        headerClone();
     },[]);
 
     const headerScroll = ()=>{
@@ -64,10 +63,11 @@ function Header({intro, project, contact}){
         }, timelineDuration);
     };
 
-    const headerClone = ()=>{
-        let mobileHeader = mainHeader.current.cloneNode(true);
-        document.querySelector('.mobile-header').append(mobileHeader);
+    const menuOpen = ()=>{
+        setMobileMenu(!MobileMenu);
     }
+
+    
 
     return(
         <>
@@ -80,10 +80,22 @@ function Header({intro, project, contact}){
                         <li><Link to="/project" className={`link_click ${project&& 'on'}`} onClick={e => changePage(e, "/project")}>project</Link></li>
                         <li><Link to="/contact" className={`link_click ${contact&& 'on'}`} onClick={e => changePage(e, "/contact")}>contact</Link></li>
                     </ul>
-                    <button><IoMenuSharp/></button>
+                    <button onClick={menuOpen}><IoMenuSharp/></button>
                 </div>
             </header>
-            <div className="mobile-header"></div>
+
+            {MobileMenu&&
+                <div className="mobile-header">
+                    <div className="main-header">
+                        <ul>
+                            <li><Link to="/intro" className={`link_click ${intro&& 'on'}`} onClick={e => changePage(e, "/intro")}>intro</Link></li>
+                            <li><Link to="/project" className={`link_click ${project&& 'on'}`} onClick={e => changePage(e, "/project")}>project</Link></li>
+                            <li><Link to="/contact" className={`link_click ${contact&& 'on'}`} onClick={e => changePage(e, "/contact")}>contact</Link></li>
+                        </ul>
+                        <button onClick={menuOpen}><IoCloseSharp/></button>
+                    </div>
+                </div>
+            }
         </>
     );
 }

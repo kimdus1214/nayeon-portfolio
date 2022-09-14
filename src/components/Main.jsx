@@ -18,7 +18,7 @@ function Main(){
         welcome.current.innerHTML=bigtext.join('');
         
         let winWidth = window.innerWidth;
-        console.log(winWidth)
+        // console.log(winWidth)
         
         if(winWidth>1280){
             mainTxt
