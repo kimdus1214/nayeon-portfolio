@@ -179,6 +179,35 @@ function Intro(){
                             </div>
                         </div>
                     </div>
+                    <div className="career border-top-point">                        
+                        <div className="career__tit tit">
+                            <h1>Career</h1>                            
+                        </div>
+                        <div className="contents__right">
+                            <table>
+                                <tr>
+                                    <td>옐로오투오 웹에이전시 디자인팀 근무</td>
+                                    <td>디자인 담당</td>
+                                </tr>
+                                <tr>
+                                    <td>허브스테이 웹에이전시 디자인팀 근무</td>
+                                    <td>디자인 및 퍼블리싱 담당</td>
+                                </tr>
+                                <tr>
+                                    <td>슈스커 쇼핑몰 디자인팀 근무</td>
+                                    <td>디자인 담당</td>
+                                </tr>
+                                <tr>
+                                    <td>406고깃집 디자이너 계약직 근무</td>
+                                    <td>디자인 담당</td>
+                                </tr>
+                                <tr>
+                                    <td>시아 개발팀 근무중</td>
+                                    <td>퍼블리싱 담당</td>
+                                </tr>                                
+                            </table>
+                        </div>
+                    </div>
                     <div className="skills border-top-point">                        
                         <div className="skills__tit tit">
                             <h1>Skills</h1>

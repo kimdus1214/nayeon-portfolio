@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import IntroPage from './pages/IntroPage';
 import ProjectPage from './pages/ProjectPage';
@@ -9,11 +9,10 @@ import { AnimatePresence } from "framer-motion";
 
 
 function App() {
-  const location = useLocation();
 
   return (
     <AnimatePresence exitBeforeEnter>    
-      <Routes key={location.pathname} location={location}>
+      <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/intro" element={<IntroPage />} />
           <Route path="/project" element={<ProjectPage />} />

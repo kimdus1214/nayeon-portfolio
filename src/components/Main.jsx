@@ -59,7 +59,7 @@ function Main(){
             })
             .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
             .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
-        }else{
+        }else if(759 < winWidth && winWidth <= 1280){
             mainTxt
             .to(".big-text h1 span", {
                 duration: 0.7,
@@ -89,6 +89,84 @@ function Main(){
                 duration: 0.8,
                 delay: 3,
                 top: -65,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".main__text",{
+                opacity: 0,
+                delay: 1.5,
+                duration: 2,
+            })
+            .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
+            .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
+        }else if(500 < winWidth && winWidth <= 759){
+            mainTxt
+            .to(".big-text h1 span", {
+                duration: 0.7,
+                yPercent: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+                stagger: {
+                each: 0.7,
+                amount: 0.5
+                }
+            },1)
+            .fromTo(".smile",{opacity: 0},{opacity: 1, duration: 0.5,  y: 0, ease: Elastic.easeOut.config(1, 0.5)})
+            .to(q("#preSmile"), {
+                morphSVG: q("#afterSmile"),
+                // delay: 0.5,
+                duration: 0.5,
+                ease: "none"
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 1,
+                top: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 3,
+                top: -50,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".main__text",{
+                opacity: 0,
+                delay: 1.5,
+                duration: 2,
+            })
+            .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
+            .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
+        }else{
+            mainTxt
+            .to(".big-text h1 span", {
+                duration: 0.7,
+                yPercent: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+                stagger: {
+                each: 0.7,
+                amount: 0.5
+                }
+            },1)
+            .fromTo(".smile",{opacity: 0},{opacity: 1, duration: 0.5,  y: 0, ease: Elastic.easeOut.config(1, 0.5)})
+            .to(q("#preSmile"), {
+                morphSVG: q("#afterSmile"),
+                // delay: 0.5,
+                duration: 0.5,
+                ease: "none"
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 1,
+                top: 0,
+                opacity: 1,
+                ease: Elastic.easeOut.config(0.5, 0.45),
+            })
+            .to(".small-text-wrap", {
+                duration: 0.8,
+                delay: 3,
+                top: -25,
                 ease: Elastic.easeOut.config(0.5, 0.45),
             })
             .to(".main__text",{

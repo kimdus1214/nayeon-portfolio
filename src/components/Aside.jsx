@@ -1,14 +1,14 @@
 import React from "react";
-import {Link} from 'react-router-dom';
-// eslint-disable-next-line
-import { FaGithub, FaInstagram, FaHeadphonesAlt,FaPhoneAlt } from "react-icons/fa";
+// import {Link} from 'react-router-dom';
+import { FaGithub, FaInstagram, FaHeadphonesAlt } from "react-icons/fa";
 
 function Aside(){
     return(
         <ul className="sns-block">
-            <li><Link to="#"><FaGithub /></Link></li>
-            <li><Link to="#"><FaInstagram /></Link></li>
-            <li><Link to="#"><FaHeadphonesAlt /></Link></li>
+            <li><a href="https://github.com/kimdus1214"><FaGithub /></a></li>
+            {/* eslint-disable-next-line */}
+            <li><a href="#"><FaInstagram /></a></li>
+            <li><a href="tel:010-7169-4754"><FaHeadphonesAlt /></a></li>
         </ul>
     )
 }

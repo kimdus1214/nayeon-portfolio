@@ -75,11 +75,20 @@ function Contact(){
                             </p>
                         </div>
                         
-                        <ul className="mt-60">
-                            <li><b>✔ e-mail</b><p>kimdus1214@naver.com</p></li>
-                            <li><b>✔ phone</b><p>010.7169.4754</p></li>
-                            <li><b>✔ kakaoid</b><p>kimdus1214</p></li>
-                        </ul>
+                        <table className="mt-60">
+                            <tr>
+                                <td className="contact__tableTit">✔ e-mail</td>
+                                <td>kimdus1214@naver.com</td>
+                            </tr>
+                            <tr>
+                                <td className="contact__tableTit">✔ phone</td>
+                                <td>010.7169.4754</td>
+                            </tr>
+                            <tr>
+                                <td className="contact__tableTit">✔ kakaoid</td>
+                                <td>kimdus1214</td>
+                            </tr>
+                        </table>                       
                     </div>
                 </div>
             </div>          
