@@ -137,7 +137,7 @@ function Main(){
             })
             .fromTo(".main__text-last",{opacity: 0},{opacity: 1, duration: 2,} ,"<80%")
             .to(".main__text-last",{opacity: 0, duration: 1, delay: 1.5})
-        }else{
+        }else if(winWidth <= 500){
             mainTxt
             .to(".big-text h1 span", {
                 duration: 0.7,

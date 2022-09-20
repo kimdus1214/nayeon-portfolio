@@ -91,7 +91,7 @@ header{position: fixed; z-index: 9; left: 60px; top: 60px; transition: all .5s;}
     header.headerOn .main-header{height: 45px;}
     header.headerOn .main-header h1 a svg{font-size: 1.8rem}
     header.headerOn .main-header button{font-size: 1.8rem;}
-    .job-block{top: 60px;}
+    .job-block{display: none;}
 
     .page-naming{padding: 20px;}
     .page-naming h2{font-size: 1.5rem;}

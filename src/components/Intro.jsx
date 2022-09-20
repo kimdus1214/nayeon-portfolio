@@ -5,10 +5,8 @@ import './style/progress.scss';
 import { AiTwotoneHeart } from "react-icons/ai";
 import {gsap, Elastic } from 'gsap';
 import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
-import ScrollTrigger from "gsap-trial/ScrollTrigger";
 import CountUp from 'react-countup';
 gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(ScrollTrigger);
 
 function Intro(){
     const hello = useRef(null);

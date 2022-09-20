@@ -20,7 +20,7 @@ a{text-decoration: none}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 html{font-size: 20px;}
-body{font-size: 1rem; background-color: #1a1a1a;}
+body{font-size: 1rem; font-family: 'Roboto', sans-serif; font-weight: 400; background-color: #1a1a1a;}
 .wrap{width: 100%; max-width: 1920px; margin: auto; position: relative; box-sizing: border-box; background-color: #1a1a1a; overflow: hidden;}
 .home{width: 100%; height: 100vh; overflow: hidden; position: relative;}
 /* 노이즈 효과*/

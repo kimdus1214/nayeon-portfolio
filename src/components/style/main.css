@@ -33,7 +33,7 @@
 @media (max-width:500px){
     .main__text .big-text h1{font-size: 1.4rem;}
     .main__text .big-text .smile{width: 55px; height: 40px;}
-    .main__text .small-text-block{height: 30px; margin-top: 15px;}
+    .main__text .small-text-block{height: 25px; margin-top: 15px;}
     .main__text .small-text-wrap{top: 20px;}
     .main__text .small-text-wrap p{font-size: 0.9rem;}
     .main__text-last h1{font-size: 1.4rem;}

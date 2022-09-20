@@ -13,14 +13,14 @@
 .sub-wrap{max-width: 1200px; width: 100%; padding: 100px 0;}
 .sub-tit{display: flex; align-items: center;}
 .sub-tit svg{margin-top: 5px; color: #efd97f;}
-.sub-tit b{margin-left: 5px; font-size: 24px; font-weight: 700; color: #efd97f;}
+.sub-tit b{margin-left: 5px; font-size: 24px; font-weight: 500; color: #efd97f;}
 
 /* 소개 페이지 */
 .intro-block .sub-wrap{}
 .sub-block .title{display: flex;}
-.sub-block .title h1{font-size: 80px; font-weight: 900; color: #fff; position: relative;}
+.sub-block .title h1{font-size: 65px; font-weight: 900; color: #fff; position: relative;}
 .sub-block .title h1 span{display: inline-block; transform: translateY(-50%); opacity: 0;}
-.sub-block .title .smile{margin-left: 15px; transform: translateY(-50px);}
+.sub-block .title .smile{width: 110px; height: 75px; margin-left: 15px; transform: translateY(-50px);}
 #afterSmile{visibility:hidden;}
 
 .intro-block .contents>div{display: flex; justify-content: space-between; padding: 38px 0 150px;}
@@ -39,7 +39,7 @@
 .intro-block .contents .contents__right .techStack ul{display: flex; flex-wrap: wrap;}
 .intro-block .contents .contents__right .techStack ul li{width:37.57%; margin-right:4.43%; margin-top: 35px; padding: 30px; display: flex; flex-direction: column; align-items: center; border: 1px solid #fff; box-sizing: border-box;}
 .intro-block .contents .contents__right .techStack ul li strong{display: block; width: 100%; padding-bottom: 15px; border-bottom: 1px solid #fff; color: #fff; font-size: 24px; text-align: center;}
-.intro-block .contents .contents__right .techStack ul li p{width: 100%; margin-top: 35px; font-family: 'GmarketSansMedium'; font-size: 16px; text-align: center; color: #fff; line-height: 1.6;}
+.intro-block .contents .contents__right .techStack ul li p{width: 100%; margin-top: 35px; font-family: 'GmarketSansMedium'; font-size: 16px; font-weight: 500; text-align: center; color: #fff; line-height: 1.6;}
 .intro-block .contents .contents__right .techStack ul li .progressbar{position: relative; margin-top: 35px; width: 100px; height: 100px;}
 .intro-block .contents .contents__right .techStack ul li .progressbar svg{width: 100%; height: 100%; transform: rotate(-90deg);}
 .intro-block .contents .contents__right .techStack ul li .progressbar svg .progressbar__svg-circle{fill: none; stroke-width: 5; stroke-dasharray: 251; stroke-dashoffset: 251;}
@@ -64,6 +64,9 @@
 .intro-block .contents .career .contents__right table td{padding: 10px 0; font-family: 'GmarketSansMedium'; font-size: 16px; line-height: 1.3; color: #fff; word-break: keep-all;}
 .intro-block .contents .career .contents__right table td:last-child{padding-left: 30px;}
 
+
+.project-block .title-block{display: flex;}
+.project-block .title-block h1:last-child{margin-left: 20px;}
 
 
 .contact h5{font-size: 24px; line-height: 1.6; font-family: 'GmarketSansMedium'; color: #fff;}
@@ -97,14 +100,15 @@
     .sub-block{position: static; padding: 150px 0;}
     .sub-wrap{max-width: initial; padding: 0 40px;}
 
-    .sub-block .title h1{font-size: 3rem;}
-    .sub-block .title .smile{width: 95px; height: 80px;}
     .contents{margin-top: 60px;}
 
     .intro-block .contents .contents__right .techStack{padding-right: 0;}
 }
 
 @media (max-width:1024px){
+    .sub-block .title h1{font-size: 2.5rem;}
+    .sub-block .title .smile{width: 80px; height: 52px;}
+
     .intro-block .contents>div{flex-direction: column;}
     .intro-block .contents .contents__right{margin-left: 0; margin-top: 60px; width: 100%;}
 
@@ -119,8 +123,9 @@
 }
 
 @media (max-width:500px){
+    .sub-block{padding: 100px 0;}
     .sub-block .title h1{font-size: 1.4rem;}
-    .sub-block .title .smile {width: 50px; height: 35px;}
+    .sub-block .title .smile {width: 50px; height: 30px; margin-left: 5px;}
 
     .sub-wrap{padding: 0 20px; box-sizing: border-box;}
     .contents{margin-top: 35px;}
