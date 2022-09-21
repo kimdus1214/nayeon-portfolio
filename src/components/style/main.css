@@ -38,3 +38,7 @@
     .main__text .small-text-wrap p{font-size: 0.9rem;}
     .main__text-last h1{font-size: 1.4rem;}
 }
+
+@media (max-width:365px){
+    .main__text-last h1{font-size: 1.2rem;}
+}

@@ -67,6 +67,39 @@
 
 .project-block .title-block{display: flex;}
 .project-block .title-block h1:last-child{margin-left: 20px;}
+.project-block .title-block{display: flex;}
+.project-block .title-block h1:last-child{margin-left: 20px;}
+.project-block .contents{padding-right: 5%;}
+.project-block .projects{display: flex; flex-wrap: wrap;}
+.project-block .projects .project-list{width:47.36%; margin-right: 5%; margin-top: 60px; padding: 20px 40px; display: flex; flex-direction: column; justify-content: center; border: 1px solid #fff; box-sizing: border-box;}
+.project-block .projects .project-list:nth-child(2n){margin-right: 0;}
+.project-block .projects .project-list .subject{display: flex; align-items: center; justify-content: center; padding: 15px 0;}
+.project-block .projects .project-list .subject strong{font-size: 24px; font-weight: 500; font-family: 'GmarketSansMedium'; color: #fff; line-height: 1;}
+.project-block .projects .project-list .explain{}
+.project-block .projects .project-list .explain li{display: flex; list-style: circle; list-style-position: inside; font-size: 18px; font-weight: 300; font-family: 'GmarketSansMedium'; color: #fff; line-height: 1.8;}
+.project-block .projects .project-list .explain li a{overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 18px; font-weight: 500; font-family: 'GmarketSansMedium'; color: #fff; line-height: 1.8; transition: all .5s; animation: textClink 1.3s linear 0s infinite;}
+.project-block .projects .project-list .explain li a:hover{color: #c3b98f; animation-play-state: paused;}
+.project-block .projects .project-list .explain li .click{position: relative; display: inline-block; max-height: 28px; background-color: #efd97f; padding: 0 10px; border-radius: 5px; box-sizing: border-box; animation: arrowMove 1.3s linear 0s infinite; transform: translateX(5px); margin-left: 10px;}
+.project-block .projects .project-list .explain li .click span{font-size: 16px; font-weight: 500; font-family: 'GmarketSansMedium'; color: #000; line-height: 1;}
+.project-block .projects .project-list .explain li .click::after{width: 0; height: 0; border-bottom: 4px solid transparent; border-top: 4px solid transparent; border-left: 0px solid transparent; border-right: 8px solid #efd97f; content: ""; position: absolute; top: 50%; left: -8px; transform: translateY(-50%);}
+
+@keyframes arrowMove {
+    0% {transform: translateX(5px)}
+	20% {transform: translateX(8px)}
+	40% {transform: translateX(5px)}
+	60% {transform: translateX(8px)}
+	80% {transform: translateX(5px)}
+	100% {transform: translateX(5px)}
+}
+
+@keyframes textClink {
+    0% {color: #fff;}
+	20% {color: #c3b98f;}
+	40% {color: #fff;}
+	60% {color: #c3b98f;}
+	80% {color: #fff;}
+	100% {color: #fff;}
+}
 
 
 .contact h5{font-size: 24px; line-height: 1.6; font-family: 'GmarketSansMedium'; color: #fff;}
@@ -103,6 +136,7 @@
     .contents{margin-top: 60px;}
 
     .intro-block .contents .contents__right .techStack{padding-right: 0;}
+    .project-block .contents{padding-right: 0;}
 }
 
 @media (max-width:1024px){
@@ -120,6 +154,10 @@
     .contact{padding-top: 60px;}
     .contact h5 br{display: none;}
     .contact .contact-con p br{display: none;}
+
+    .project-block .projects .project-list{padding: 20px;}
+    .project-block .projects .project-list .explain li{font-size: 16px;}
+    .project-block .projects .project-list .explain li a{font-size: 16px;}
 }
 
 @media (max-width:500px){
@@ -146,3 +184,13 @@
     .contact table td:last-child{font-size: 16px; width: 65%;}
 }
 
+
+@media (max-width:365px){
+    .intro-block .contents .skills .contents__right ul{flex-direction: column;}
+    .intro-block .contents .skills .contents__right ul li+li {margin-left: 0px; margin-top: 15px;}
+
+    .project-block .projects .project-list{width: 100%; margin-right: 0;}
+
+    .contact table td.contact__tableTit{width:45%}
+    .contact table td:last-child{width: 55%;}
+}
