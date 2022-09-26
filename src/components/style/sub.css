@@ -189,6 +189,7 @@
     .project-block .projects .project-list{width: 90%; margin-right: 0; margin-top: 35px;}
     .project-block .project-ect{flex-direction: column;}
     .project-block .project-ect .contents__right{margin-left: 0; margin-top: 35px;}
+    .project-block .project-ect .contents__right p{font-size: 16px;}
     
     .contact .contact-con{margin-top: 35px;}
     .contact h5{font-size: 20px;}
