@@ -41,4 +41,5 @@
 
 @media (max-width:365px){
     .main__text-last h1{font-size: 1.2rem;}
+    .main__text .small-text-wrap p{font-size: 0.8rem; line-height: 1.6;}
 }
