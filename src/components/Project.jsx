@@ -68,7 +68,7 @@ function Project(){
                         <b>참고사항</b>                       
                     </div>
                     <div className="contents__right">
-                       <p>진행한 위 프로젝트는 그누보드를 기반으로 한 웹사이트 입니다.</p>
+                       <p>진행한 위 프로젝트들은 따로 템플릿 없이, 그누보드를 기반으로 제작된 웹사이트 입니다.</p>
                     </div>
                 </div>
             </div>

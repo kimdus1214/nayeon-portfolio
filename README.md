@@ -21,6 +21,6 @@ Click on the menus you are interested in!
 <br>
 ❗ 참고사항<br>
 이 사이트는 유료 플러그인 사용으로 빌드가 안되는 문제로, 유료 플러그인 요소를 빼고 빌드시켰습니다. <br/>
-URL : [kimdus1214.github.io](https://kimdus1214.github.io/) <br/>
-수정전: 🙂 > 😊 (메인과 서브페이지에서 표정이 바뀌었음) <br/>
-수정후: 😊(웃는표정 유지)
+URL : https://kimdus1214.github.io/ <br/>
+- 수정 전: 🙂 > 😊 (메인과 서브페이지에서 표정이 바뀌었음) <br/>
+- 수정 후: 😊(웃는표정 유지)

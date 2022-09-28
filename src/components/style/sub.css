@@ -86,9 +86,10 @@
 .project-block .projects .project-list .explain li .click::after{width: 0; height: 0; border-bottom: 4px solid transparent; border-top: 4px solid transparent; border-left: 0px solid transparent; border-right: 8px solid #efd97f; content: ""; position: absolute; top: 50%; left: -8px; transform: translateY(-50%);}
 .project-block .projects .project-list .explain li+li{margin-top: 10px;}
 .project-block .project-ect{display: flex; padding: 38px 0 150px;}
-.project-block .project-ect .sub-tit b{font-family: 'GmarketSansMedium';}
+/* .project-block .project-ect .sub-tit{width: 20%;} */
+.project-block .project-ect .sub-tit b{font-family: 'GmarketSansMedium'; white-space: nowrap;}
 .project-block .project-ect .contents__right{margin-left: 9.66%;}
-.project-block .project-ect .contents__right p{font-size: 18px; font-family: 'GmarketSansMedium'; font-weight: 300; line-height: 1.4; color: #fff;}
+.project-block .project-ect .contents__right p{font-size: 18px; font-family: 'GmarketSansMedium'; font-weight: 300; line-height: 1.4; color: #fff; word-break: keep-all;}
 
 
 
