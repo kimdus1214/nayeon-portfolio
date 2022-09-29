@@ -91,7 +91,7 @@
 .project-block .project-ect .contents__right{margin-left: 9.66%;}
 .project-block .project-ect .contents__right p{font-size: 18px; font-family: 'GmarketSansMedium'; font-weight: 300; line-height: 1.4; color: #fff; word-break: keep-all;}
 
-
+.no-project{display: flex; padding: 25px 0; color: #fff; font-size: 16px; font-family: 'GmarketSansMedium';}
 
 @keyframes arrowMove {
     0% {transform: translateX(5px)}

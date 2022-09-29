@@ -1,7 +1,10 @@
-import React from "react"
+import React,{useState,useEffect} from "react"
+import { PagingBtn } from "./PagingBtn";
+
 
 function ProjectList(){
-    const projects = [
+    // eslint-disable-next-line
+    const [items, setitems] = useState([
         // {
         //     title: '이루미치과',
         //     url: 'http://erumi.siia.kr/',
@@ -101,27 +104,55 @@ function ProjectList(){
             explain03: '작업 기간: 2일',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         }
-    ];
+    ]);
+
+    const [count, setCount] = useState(0); //아이템 총 개수
+    const [currentpage, setCurrentpage] = useState(1); //현재페이지
+    const [postPerPage] = useState(6); //페이지당 아이템 개수
+
+    const [indexOfLastPost, setIndexOfLastPost] = useState(0);
+    const [indexOfFirstPost, setIndexOfFirstPost] = useState(0);
+    const [currentPosts, setCurrentPosts] = useState(0);
+
+
+    useEffect(() => {
+        setCount(items.length);
+        setIndexOfLastPost(currentpage * postPerPage);
+        setIndexOfFirstPost(indexOfLastPost - postPerPage);
+        setCurrentPosts(items.slice(indexOfFirstPost, indexOfLastPost));
+    }, [currentpage, indexOfFirstPost, indexOfLastPost, items, postPerPage]);
+    
+    const setPage = (e) => {
+        setCurrentpage(e);
+    };
 
     return(
-        <ul className="projects">                        
-            {projects.map((project,index)=>(
-                <li className="project-list" key={index}>
-                    <div className="subject">
-                        <strong>{project.title}</strong>
-                    </div>
-                    <img src={process.env.PUBLIC_URL + project.img} alt="포트폴리오 이미지" />
-                    <ul className="explain mt-30">
-                        <li>
-                            <a href={project.url}>{project.explain01}</a>
+        <>
+            <ul className="projects">   
+                {currentPosts && items.length > 0 ? (
+                    currentPosts.map((item,index)=>(
+                        <li className="project-list" key={index}>
+                            <div className="subject border-bottom-white">
+                                <strong>{item.title}</strong>
+                            </div>
+                            <img src={process.env.PUBLIC_URL + item.img} alt="포트폴리오 이미지" />
+                            <ul className="explain mt-30">
+                                <li>
+                                    <a href={item.url}>{item.explain01}</a>
+                                    {/* <div className="click"><span>click!</span></div> */}
+                                </li>
+                                <li>{item.explain02}</li>
+                                <li>{item.explain03}</li>
+                                <li>{item.explain04}</li>
+                            </ul>
                         </li>
-                        <li>{project.explain02}</li>
-                        <li>{project.explain03}</li>
-                        <li>{project.explain04}</li>
-                    </ul>
-                </li>
-            ))}
-        </ul>
+                    ))
+                )
+                    :  <li className="no-project">게시물이 없습니다.</li>
+                }
+            </ul>
+            <PagingBtn page={currentpage} count={count} setPage={setPage} />
+        </>
     );
 }
 
