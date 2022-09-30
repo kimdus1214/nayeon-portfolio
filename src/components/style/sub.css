@@ -92,6 +92,14 @@
 .project-block .project-ect .contents__right p{font-size: 18px; font-family: 'GmarketSansMedium'; font-weight: 300; line-height: 1.4; color: #fff; word-break: keep-all;}
 
 .no-project{display: flex; padding: 25px 0; color: #fff; font-size: 16px; font-family: 'GmarketSansMedium';}
+.pagination{display: flex; justify-content: center; margin-top: 80px;}
+.pagination li{width: 42px; height: 42px; margin: 0 2px; border: 1px solid #fff;}
+.pagination li a{width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; font-family: 'GmarketSansMedium'; font-size: 16px; color: #fff;}
+.pagination li a svg{font-size: 25px; color: #fff;}
+.pagination li:first-child{display: none;}
+.pagination li:last-child{display: none;}
+.pagination li.active{background-color: #fff;}
+.pagination li.active a{color: #000;}
 
 @keyframes arrowMove {
     0% {transform: translateX(5px)}
@@ -186,11 +194,13 @@
     .intro-block .contents .contents__right .techStack ul{justify-content: center;}
     .intro-block .contents .contents__right .techStack ul li{width: 80%; margin-right: 0;}
 
+    .project-block .title-block h1:last-child{margin-left: 10px;}
     .project-block .projects{justify-content: center;}
     .project-block .projects .project-list{width: 90%; margin-right: 0; margin-top: 35px;}
     .project-block .project-ect{flex-direction: column;}
     .project-block .project-ect .contents__right{margin-left: 0; margin-top: 35px;}
     .project-block .project-ect .contents__right p{font-size: 16px;}
+    .pagination{margin-top: 35px;}
     
     .contact .contact-con{margin-top: 35px;}
     .contact h5{font-size: 20px;}
@@ -208,6 +218,7 @@
     .intro-block .contents .contents__right .techStack ul li{width: 100%;}
 
     .project-block .projects .project-list{width: 100%;}
+    .pagination li{width: 36px; height: 36px;}
 
     .contact table td.contact__tableTit{width:45%}
     .contact table td:last-child{width: 55%;}
