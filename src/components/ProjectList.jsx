@@ -5,15 +5,24 @@ import { PagingBtn } from "./PagingBtn";
 function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
-        // {
-        //     title: '이루미치과',
-        //     url: 'http://erumi.siia.kr/',
-        //     img: './assets/sub/project/port-img-erumi.png',
-        //     explain01: 'http://erumi.siia.kr/',
-        //     explain02: 'IR 반응형 사이트(작업예정)',
-        //     explain03: '작업 기간: -',
-        //     explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
-        // },
+        {
+            title: '이루미치과',
+            url: 'http://erumi.siia.kr/',
+            img: './assets/sub/project/port-img-erumi.png',
+            explain01: 'http://erumi.siia.kr/',
+            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+        },
+        {
+            title: '에이유리더스',
+            url: 'http://auleaders.siia.kr/',
+            img: './assets/sub/project/port-img-auleaders.png',
+            explain01: 'http://auleaders.siia.kr/',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: 4-5일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+        },
         {
             title: '부산미남병원',
             url: 'http://bsminam.siia.kr/',
