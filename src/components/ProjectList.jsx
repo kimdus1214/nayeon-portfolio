@@ -6,6 +6,42 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '엑스페라',
+            url: 'http://xpera.siia.kr/',
+            img: './assets/sub/project/port-img-xpera.png',
+            explain01: 'http://xpera.siia.kr/',
+            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+        },
+        {
+            title: '제로원',
+            url: 'http://zero1ne.com/',
+            img: './assets/sub/project/port-img-zero1ne.png',
+            explain01: 'http://zero1ne.com/',
+            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+        },
+        {
+            title: 'KME',
+            url: 'http://kme.siia.kr/',
+            img: './assets/sub/project/port-img-kme.png',
+            explain01: 'http://kme.siia.kr/',
+            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+        },
+        {
+            title: '제이디스컨벤션',
+            url: 'http://jdds.kr/',
+            img: './assets/sub/project/port-img-jdsc.png',
+            explain01: 'http://jdds.kr/',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: 1-2일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
             title: '이루미치과',
             url: 'http://erumi.siia.kr/',
             img: './assets/sub/project/port-img-erumi.png',
