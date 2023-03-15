@@ -6,31 +6,67 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '뉴브라이트',
+            url: 'http://nubright.siia.kr/',
+            img: './assets/sub/project/port-img-nubright.png',
+            explain01: 'http://nubright.siia.kr/',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: 1일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '바른고기',
+            url: 'http://barunmeat.siia.kr/',
+            img: './assets/sub/project/port-img-barunmeat.png',
+            explain01: 'http://barunmeat.siia.kr/',
+            explain02: '랜딩페이지(현재 운영중)',
+            explain03: '작업 기간: 3일반',
+            explain04: '작업 내용: 메인 퍼블리싱 작업'
+        },
+        {
+            title: '한음미디어',
+            url: 'http://humedia.siia.kr/',
+            img: './assets/sub/project/port-img-humedia.png',
+            explain01: 'http://humedia.siia.kr/',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '펜스프로덕션',
+            url: 'http://fence.siia.kr/',
+            img: './assets/sub/project/port-img-fence.png',
+            explain01: 'http://fence.siia.kr/',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: 1일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
             title: '엑스페라',
             url: 'http://xpera.siia.kr/',
             img: './assets/sub/project/port-img-xpera.png',
             explain01: 'http://xpera.siia.kr/',
-            explain02: 'IR 반응형 사이트(작업진행중)',
-            explain03: '작업 기간: -',
-            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: 2일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
         {
             title: '제로원',
             url: 'http://zero1ne.com/',
             img: './assets/sub/project/port-img-zero1ne.png',
             explain01: 'http://zero1ne.com/',
-            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
             explain03: '작업 기간: -',
-            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
         {
             title: 'KME',
             url: 'http://kme.siia.kr/',
             img: './assets/sub/project/port-img-kme.png',
             explain01: 'http://kme.siia.kr/',
-            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
             explain03: '작업 기간: -',
-            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
         {
             title: '제이디스컨벤션',
@@ -46,9 +82,9 @@ function ProjectList(){
             url: 'http://erumi.siia.kr/',
             img: './assets/sub/project/port-img-erumi.png',
             explain01: 'http://erumi.siia.kr/',
-            explain02: 'IR 반응형 사이트(작업진행중)',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
             explain03: '작업 기간: -',
-            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
         {
             title: '에이유리더스',
@@ -57,7 +93,7 @@ function ProjectList(){
             explain01: 'http://auleaders.siia.kr/',
             explain02: 'IR 반응형 사이트(현재 운영중)',
             explain03: '작업 기간: 4-5일',
-            explain04: '작업 내용: 메인~서브 퍼블리싱 작업예정'
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
         {
             title: '부산미남병원',
@@ -73,7 +109,7 @@ function ProjectList(){
             url: 'http://kangdajim2022.siia.kr/',
             img: './assets/sub/project/port-img-kangdajim.png',
             explain01: 'http://kangdajim2022.siia.kr/',
-            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain02: '랜딩페이지(현재 운영중)',
             explain03: '작업 기간: 2일반',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
