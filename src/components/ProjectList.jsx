@@ -6,6 +6,15 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '왓더버거',
+            url: 'http://wtburger.siia.kr/',
+            img: './assets/sub/project/port-img-wtburger.png',
+            explain01: 'http://wtburger.siia.kr/',
+            explain02: '랜딩페이지(현재 운영중)',
+            explain03: '작업 기간: 5일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
             title: '뉴브라이트',
             url: 'http://nubright.siia.kr/',
             img: './assets/sub/project/port-img-nubright.png',
