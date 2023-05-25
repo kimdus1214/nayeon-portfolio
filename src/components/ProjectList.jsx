@@ -6,6 +6,33 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '에코마린',
+            url: 'http://ecomarine.siia.kr/',
+            img: './assets/sub/project/port-img-ecomarine.png',
+            explain01: 'http://ecomarine.siia.kr/',
+            explain02: 'IR 반응형 사이트(작업중)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        // {
+        //     title: '펭귄상회',
+        //     url: 'http://wtburger.siia.kr/',
+        //     img: './assets/sub/project/port-img-wtburger.png',
+        //     explain01: 'http://wtburger.siia.kr/',
+        //     explain02: '랜딩페이지(현재 운영중)',
+        //     explain03: '작업 기간: 5일',
+        //     explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        // },
+        {
+            title: '화명요리학원',
+            url: 'http://academyhm.siia.kr/',
+            img: './assets/sub/project/port-img-academyhm.png',
+            explain01: 'http://academyhm.siia.kr/',
+            explain02: 'IR 반응형 사이트(현재 운영중)',
+            explain03: '작업 기간: 2일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
             title: '왓더버거',
             url: 'http://wtburger.siia.kr/',
             img: './assets/sub/project/port-img-wtburger.png',
