@@ -6,6 +6,33 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '경남정보연구원',
+            url: 'http://bmi.siia.kr/',
+            img: './assets/sub/project/port-img-bmi.png',
+            explain01: 'http://bmi.siia.kr/',
+            explain02: 'IR 반응형 사이트)',
+            explain03: '작업 기간: 2-3일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '리맥스',
+            url: 'http://remax.siia.kr/',
+            img: './assets/sub/project/port-img-remax.png',
+            explain01: 'http://remax.siia.kr/',
+            explain02: 'IR 반응형 사이트)',
+            explain03: '작업 기간: 2-3일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '영진메카텍',
+            url: 'http://yjmecatec.siia.kr/',
+            img: './assets/sub/project/port-img-yjmecatec.png',
+            explain01: 'http://yjmecatec.siia.kr/',
+            explain02: 'IR 반응형 사이트)',
+            explain03: '작업 기간: 1일',
+            explain04: '작업 내용: 메인 퍼블리싱 작업'
+        },
+        {
             title: '에코마린',
             url: 'http://ecomarine.siia.kr/',
             img: './assets/sub/project/port-img-ecomarine.png',
@@ -14,15 +41,15 @@ function ProjectList(){
             explain03: '작업 기간: -',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
-        // {
-        //     title: '펭귄상회',
-        //     url: 'http://wtburger.siia.kr/',
-        //     img: './assets/sub/project/port-img-wtburger.png',
-        //     explain01: 'http://wtburger.siia.kr/',
-        //     explain02: '랜딩페이지(현재 운영중)',
-        //     explain03: '작업 기간: 5일',
-        //     explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
-        // },
+        {
+            title: '펭귄상회',
+            url: 'http://wtburger.siia.kr/',
+            img: './assets/sub/project/port-img-wtburger.png',
+            explain01: 'http://wtburger.siia.kr/',
+            explain02: '랜딩페이지(현재 운영중)',
+            explain03: '작업 기간: 5일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
         {
             title: '화명요리학원',
             url: 'http://academyhm.siia.kr/',
