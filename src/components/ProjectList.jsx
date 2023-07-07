@@ -10,7 +10,7 @@ function ProjectList(){
             url: 'http://bmi.siia.kr/',
             img: './assets/sub/project/port-img-bmi.png',
             explain01: 'http://bmi.siia.kr/',
-            explain02: 'IR 반응형 사이트)',
+            explain02: 'IR 반응형 사이트',
             explain03: '작업 기간: 2-3일',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
@@ -19,7 +19,25 @@ function ProjectList(){
             url: 'http://remax.siia.kr/',
             img: './assets/sub/project/port-img-remax.png',
             explain01: 'http://remax.siia.kr/',
-            explain02: 'IR 반응형 사이트)',
+            explain02: 'IR 반응형 사이트',
+            explain03: '작업 기간: 2-3일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '아이비즈트래블',
+            url: 'http://ibztravel.siia.kr/',
+            img: './assets/sub/project/port-img-ibztravel.png',
+            explain01: 'http://ibztravel.siia.kr/',
+            explain02: 'IR 반응형 사이트(영카트)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '나루로지스틱스',
+            url: 'http://naru.siia.kr/',
+            img: './assets/sub/project/port-img-naru.png',
+            explain01: 'http://naru.siia.kr/',
+            explain02: 'IR 반응형 사이트',
             explain03: '작업 기간: 2-3일',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
         },
@@ -28,7 +46,7 @@ function ProjectList(){
             url: 'http://yjmecatec.siia.kr/',
             img: './assets/sub/project/port-img-yjmecatec.png',
             explain01: 'http://yjmecatec.siia.kr/',
-            explain02: 'IR 반응형 사이트)',
+            explain02: 'IR 반응형 사이트',
             explain03: '작업 기간: 1일',
             explain04: '작업 내용: 메인 퍼블리싱 작업'
         },
@@ -43,9 +61,9 @@ function ProjectList(){
         },
         {
             title: '펭귄상회',
-            url: 'http://wtburger.siia.kr/',
+            url: 'http://penguin.siia.kr/',
             img: './assets/sub/project/port-img-wtburger.png',
-            explain01: 'http://wtburger.siia.kr/',
+            explain01: 'http://penguin.siia.kr/',
             explain02: '랜딩페이지(현재 운영중)',
             explain03: '작업 기간: 5일',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
