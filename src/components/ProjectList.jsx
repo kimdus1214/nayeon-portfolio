@@ -6,6 +6,24 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '카페바바',
+            url: 'http://cafevava.siia.kr/',
+            img: './assets/sub/project/port-img-cafevava.png',
+            explain01: 'http://cafevava.siia.kr/',
+            explain02: '반응형 원페이지',
+            explain03: '작업 기간: 1일',
+            explain04: '작업 내용: 메인 퍼블리싱 작업'
+        },
+        {
+            title: '시선',
+            url: 'http://sisun.siia.kr/',
+            img: './assets/sub/project/port-img-sisun.png',
+            explain01: 'http://sisun.siia.kr/',
+            explain02: 'IR 반응형 사이트',
+            explain03: '작업 기간: 2일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
             title: 'GDK',
             url: 'http://gdk.kr/',
             img: './assets/sub/project/port-img-gdk.png',
