@@ -6,6 +6,42 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: '쌤공',
+            url: 'http://ssamgong.siia.kr/',
+            img: './assets/sub/project/port-img-ssamgong.png',
+            explain01: 'http://ssamgong.siia.kr/',
+            explain02: '반응형 자료공유사이트(영카트)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 전체 퍼블리싱 작업'
+        },
+        {
+            title: '에코인슈텍',
+            url: 'http://eco-insutech.siia.kr/index.php',
+            img: './assets/sub/project/port-img-insutech.png',
+            explain01: 'http://eco-insutech.siia.kr',
+            explain02: 'IR 반응형 사이트',
+            explain03: '작업 기간: 2-3일',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '하이엔드모터스',
+            url: 'http://highend.siia.kr/',
+            img: './assets/sub/project/port-img-highend.png',
+            explain01: 'http://highend.siia.kr/',
+            explain02: 'IR 반응형 사이트(프론트만 진행)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '에이치엔아이컴퍼니',
+            url: 'http://hnic.siia.kr/',
+            img: './assets/sub/project/port-img-hnic.png',
+            explain01: 'http://hnic.siia.kr/',
+            explain02: 'IR 반응형 사이트',
+            explain03: '작업 기간: 2-3일',
+            explain04: '작업 내용: 메인 퍼블리싱 작업'
+        },
+        {
             title: '카페바바',
             url: 'http://cafevava.siia.kr/',
             img: './assets/sub/project/port-img-cafevava.png',
