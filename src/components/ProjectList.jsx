@@ -19,9 +19,18 @@ function ProjectList(){
             url: 'http://eco-insutech.siia.kr/index.php',
             img: './assets/sub/project/port-img-insutech.png',
             explain01: 'http://eco-insutech.siia.kr',
-            explain02: 'IR 반응형 사이트',
+            explain02: 'IR 반응형 사이트(+에코하우징)',
             explain03: '작업 기간: 2-3일',
             explain04: '작업 내용: 메인~서브 퍼블리싱 작업'
+        },
+        {
+            title: '브루마스',
+            url: 'https://brumass.cafe24.com/',
+            img: './assets/sub/project/port-img-brumass.png',
+            explain01: 'https://brumass.cafe24.com',
+            explain02: '쇼핑몰 반응형 사이트',
+            explain03: '작업 기간: 2-3일',
+            explain04: '작업 내용: 카페24 유료 스킨을 커스텀하여 작업'
         },
         {
             title: '하이엔드모터스',
