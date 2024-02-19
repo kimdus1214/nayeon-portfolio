@@ -6,6 +6,33 @@ function ProjectList(){
     // eslint-disable-next-line
     const [items, setitems] = useState([
         {
+            title: 'TOPS',
+            url: 'http://tops.siia.kr/',
+            img: './assets/sub/project/port-img-tops.png',
+            explain01: 'http://tops.siia.kr/',
+            explain02: '반응형 쇼핑몰(영카트)',
+            explain03: '작업 기간: -',
+            explain04: '작업 내용: 전체 퍼블리싱 작업'
+        },
+        {
+            title: '대명종합폐차장',
+            url: 'http://daemyung.siia.kr/',
+            img: './assets/sub/project/port-img-daemyung.png',
+            explain01: 'http://daemyung.siia.kr/',
+            explain02: '반응형 원페이지',
+            explain03: '작업 기간: 1일반',
+            explain04: '작업 내용: 메인 퍼블리싱 작업'
+        },
+        {
+            title: 'BEXCO',
+            url: 'http://bexco.siia.kr/',
+            img: './assets/sub/project/port-img-bexco.png',
+            explain01: 'http://bexco.siia.kr/',
+            explain02: '키오스크 세로형(현재 운영중)',
+            explain03: '작업 기간: 2일반',
+            explain04: '작업 내용: 키오스크 작업'
+        },
+        {
             title: '쌤공',
             url: 'http://ssamgong.siia.kr/',
             img: './assets/sub/project/port-img-ssamgong.png',
@@ -289,7 +316,7 @@ function ProjectList(){
             url: 'http://bspace.siia.kr/',
             img: './assets/sub/project/port-img-bspace.png',
             explain01: 'http://bspace.siia.kr/',
-            explain02: '키오스크(현재 운영중)',
+            explain02: '키오스크 가로형(현재 운영중)',
             explain03: '작업 기간: 2일반',
             explain04: '작업 내용: 메인 작업'
         },
